@@ -1,5 +1,5 @@
 In Progress
-- create basic mobile app simulator
+- test python with simple hello world 
 - connect language model, experiment with basic inputs
 - connect OCR, experiment with basic inputs
 
@@ -15,6 +15,8 @@ To Do
 
 Completed
 researched and installed xcode, swift, BERT, PyTesseract
+set up react, xcode to make basic app
+added python support to proejct 
 
 Notes
   BERT

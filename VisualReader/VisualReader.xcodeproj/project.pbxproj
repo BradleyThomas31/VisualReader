@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53AE55BE2B60617600DBCA79 /* pythonTest.py in Resources */ = {isa = PBXBuildFile; fileRef = 53AE55BD2B60617600DBCA79 /* pythonTest.py */; };
+		53AE55C12B60635900DBCA79 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 53AE55C02B60635900DBCA79 /* PythonKit */; };
 		53BCF9CB2B60575A00ACD184 /* VisualReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BCF9CA2B60575A00ACD184 /* VisualReaderApp.swift */; };
 		53BCF9CD2B60575A00ACD184 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BCF9CC2B60575A00ACD184 /* ContentView.swift */; };
 		53BCF9CF2B60575F00ACD184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53BCF9CE2B60575F00ACD184 /* Assets.xcassets */; };
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		53AE55BD2B60617600DBCA79 /* pythonTest.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = pythonTest.py; sourceTree = "<group>"; };
 		53BCF9C72B60575A00ACD184 /* VisualReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53BCF9CA2B60575A00ACD184 /* VisualReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualReaderApp.swift; sourceTree = "<group>"; };
 		53BCF9CC2B60575A00ACD184 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53AE55C12B60635900DBCA79 /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +101,7 @@
 			children = (
 				53BCF9CA2B60575A00ACD184 /* VisualReaderApp.swift */,
 				53BCF9CC2B60575A00ACD184 /* ContentView.swift */,
+				53AE55BD2B60617600DBCA79 /* pythonTest.py */,
 				53BCF9CE2B60575F00ACD184 /* Assets.xcassets */,
 				53BCF9D02B60575F00ACD184 /* VisualReader.entitlements */,
 				53BCF9D12B60575F00ACD184 /* Preview Content */,
@@ -145,6 +150,9 @@
 			dependencies = (
 			);
 			name = VisualReader;
+			packageProductDependencies = (
+				53AE55C02B60635900DBCA79 /* PythonKit */,
+			);
 			productName = VisualReader;
 			productReference = 53BCF9C72B60575A00ACD184 /* VisualReader.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +225,9 @@
 				Base,
 			);
 			mainGroup = 53BCF9BE2B60575A00ACD184;
+			packageReferences = (
+				53AE55BF2B60635900DBCA79 /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
 			productRefGroup = 53BCF9C82B60575A00ACD184 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -235,6 +246,7 @@
 			files = (
 				53BCF9D32B60575F00ACD184 /* Preview Assets.xcassets in Resources */,
 				53BCF9CF2B60575F00ACD184 /* Assets.xcassets in Resources */,
+				53AE55BE2B60617600DBCA79 /* pythonTest.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,6 +621,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		53AE55BF2B60635900DBCA79 /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		53AE55C02B60635900DBCA79 /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53AE55BF2B60635900DBCA79 /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 53BCF9BF2B60575A00ACD184 /* Project object */;
 }
